@@ -1,0 +1,26 @@
+From 6c3d2246faa0068ec012337aa6d824f7604d40e3 Mon Sep 17 00:00:00 2001
+From: vijay457 <vijayreddy687@gmail.com>
+Date: Fri, 13 May 2016 15:16:21 +0200
+Subject: [PATCH] Initial change: Board name change
+
+---
+ board/freescale/mx6sabresd/mx6sabresd.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/board/freescale/mx6sabresd/mx6sabresd.c b/board/freescale/mx6sabresd/mx6sabresd.c
+index 5b0b83e..4cf463f 100644
+--- a/board/freescale/mx6sabresd/mx6sabresd.c
++++ b/board/freescale/mx6sabresd/mx6sabresd.c
+@@ -697,7 +697,8 @@ int board_late_init(void)
+ 
+ int checkboard(void)
+ {
+-	puts("Board: MX6-SabreSD\n");
++	/*puts("Board: MX6-SabreSD\n");*/
++        puts("Board: MX6-Hurricane\n");
+ 	return 0;
+ }
+ 
+-- 
+1.9.1
+
